@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashen Echoes - A Dark Souls Inspired Journey</title>
+    <!-- Optional: Add Normalize CSS -->
+    <link rel="stylesheet" href="code.css">
+    <!-- Google Fonts (Example: Cinzel Decorative for headings, EB Garamond for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon (Optional - Create a simple ember/soul icon) -->
+    <link rel="icon" href="https://steamuserimages-a.akamaihd.net/ugc/921424882354130141/9560489384DBA6BDE489F038399B7A3BFA0A684B/" type="image/png">
+</head>
+<body>
+    <div id="scrollProgressBar"></div>
+    <div class="loading-screen" id="loadingScreen">
+        <img src="assets/images/bonfire.gif" alt="Loading..." class="loading-bonfire">
+        <p>Preparing your journey...</p>
+    </div>
+
+    <header id="mainHeader">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#">ASHEN ECHOES</a>
+                <!-- Or potentially an actual small logo image -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#story" class="nav-link">Lore</a></li>
+                <li><a href="#features" class="nav-link">Gameplay</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#buy" class="nav-link btn btn-cta-nav">Pre-Order</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">The Flame Flickers. Darkness Consumes.</h1>
+                <p class="hero-subtitle">Will you link the fire, or usher in the age of dark?</p>
+                <a href="#story" class="btn btn-primary scroll-link">Discover Your Fate</a>
+                <!-- Optional: Trailer Button -->
+                <!-- <button class="btn btn-secondary" id="playTrailerBtn">Watch Trailer</button> -->
+            </div>
+            <div class="scroll-down-indicator">
+                <span>Scroll Down</span>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <!-- Story/Lore Section -->
+        <section id="story" class="content-section dark-bg">
+            <div class="container fade-in">
+                <h2 class="section-title">Whispers of a Dying World</h2>
+                <div class="lore-container">
+                    <div class="lore-image">
+                        <!-- Placeholder image related to lore -->
+                        <img src="assets/images/bonfire.gif" alt="Bonfire Lit" style="opacity: 0.7; border-radius: 5px;">
+                    </div>
+                    <div class="lore-text">
+                        <p>The First Flame fades, and with it, the Age of Fire. Cursed Undead roam the land, clinging to the last vestiges of their humanity. Lords of Cinder have abandoned their thrones, and the bells toll to awaken the Ashen One – unkindled, unfit even to be cinder.</p>
+                        <p>Rise, Ashen One. Journey through the collapsing kingdom of Lothric. Overcome challenges unthought-of, face beings of immense power, and decide the fate of this dying age. Seek the Lords, return them to their thrones, and perhaps... link the fire once more.</p>
+                        <p>But beware, for the path is fraught with peril, and the Dark Soul beckons.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gameplay Features Section -->
+        <section id="features" class="content-section textured-bg">
+            <div class="container">
+                <h2 class="section-title ember-glow">Master Your Prowess</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <img src="assets/images/feature-combat.jpg" alt="Intense Combat" class="feature-img">
+                        <div class="feature-content">
+                            <h3>Brutal Combat</h3>
+                            <p>Engage in methodical, challenging combat where every strike matters. Master timing, parrying, and dodging to overcome relentless foes.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card fade-in" style="animation-delay: 0.2s;">
+                        <img src="assets/images/feature-explore.jpg" alt="World Exploration" class="feature-img">
+                        <div class="feature-content">
+                            <h3>Interconnected World</h3>
+                            <p>Explore a vast, seamless world full of hidden paths, secrets, and breathtaking vistas. Discover shortcuts and unravel the environmental storytelling.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card fade-in" style="animation-delay: 0.4s;">
+                        <img src="assets/images/feature-boss.jpg" alt="Epic Bosses" class="feature-img">
+                        <div class="feature-content">
+                            <h3>Unforgettable Bosses</h3>
+                            <p>Face towering, terrifying bosses, each with unique attack patterns and lore. Victory demands skill, perseverance, and strategy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="content-section dark-bg">
+            <div class="container fade-in">
+                <h2 class="section-title">Glimpses of Despair</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="assets/images/gallery1.jpg" alt="Gallery Image 1" loading="lazy"></div>
+                    <div class="gallery-item"><img src="assets/images/gallery2.jpg" alt="Gallery Image 2" loading="lazy"></div>
+                    <div class="gallery-item"><img src="assets/images/gallery3.jpg" alt="Gallery Image 3" loading="lazy"></div>
+                    <div class="gallery-item"><img src="assets/images/gallery4.jpg" alt="Gallery Image 4" loading="lazy"></div>
+                    <!-- Add more images -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-Order/Buy Section -->
+        <section id="buy" class="content-section cta-section textured-bg">
+            <div class="container fade-in">
+                <h2 class="section-title ember-glow">Embrace the Darkness</h2>
+                <p>The fate of the world rests upon your shoulders. Are you prepared?</p>
+                <a href="#" class="btn btn-primary btn-large">Pre-Order Now and Receive the Ember Set</a>
+                <p class="fine-print">Available on PC, PlayStation, and Xbox.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="mainFooter">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 FromSoftware. All Rights Reserved. Dark Souls is a trademark of Bandai Namco Entertainment Inc. Website concept by AI.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> <!-- Requires FontAwesome -->
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Add ember particle effect container here if desired -->
+        <canvas id="emberCanvas"></canvas>
+    </footer>
+
+    <!-- Optional: Lightbox Modal Structure -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Optional: FontAwesome for social icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script> 
+    <script src="code.js"></script>
+</body>
+</html>
